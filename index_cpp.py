@@ -10,7 +10,7 @@ output = llm.create_completion("""<|im_start|>system
 You are a helpful chatbot.
 <|im_end|>
 <|im_start|>user
-Miêu tả về bạn?<|im_end|>
+Làm một bài văn tả con chó!<|im_end|>
 <|im_start|>assistant""", max_tokens=1000,  stop=["<|im_end|>"], stream=True)
 
 for token in output:
